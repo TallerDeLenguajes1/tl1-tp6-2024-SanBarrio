@@ -92,3 +92,32 @@ float tomarValor(){
     
 }
 
+Console.WriteLine("\n------------- Ejercicio 4 ------------\n");
+
+
+Console.WriteLine("Ingrese una cadena de caracteres: ");
+string cadena = Console.ReadLine();
+Console.WriteLine($"La longitud de la cadena ingresada es: {cadena.Length} ");
+Console.WriteLine("Ingrese una segunda cadena de caracteres: ");
+string cadena2 = Console.ReadLine();
+Console.WriteLine($"Cadenas de caracteres concatenadas: {cadena + cadena2}");
+string cadena3 =  cadena + cadena2;
+Console.WriteLine($"La subcadena: {cadena3.Substring(4)}");
+foreach (char letrita in cadena3) {
+    Console.WriteLine(letrita);
+}
+
+if (cadena3.Contains("hola")) {
+    Console.WriteLine("La palabra 'hola' si está contenida en la cadena de caracteres.");
+} else {
+    Console.WriteLine("La palabra 'hola' no está contenida en la cadena de caracteres.");
+}
+
+Console.WriteLine($"La cadena de caracteres en mayúsculas es {cadena3.ToUpper()}");
+Console.WriteLine($"La cadena es minúsculas es {cadena3.ToLower()}");
+string cadena4 = "hola,como,que,tal,estas?";
+string[] cadenaSplit = cadena4.Split(",");
+Console.WriteLine("Cadena de caracteres usando Split: ");
+foreach (string pal in cadenaSplit) {
+    Console.WriteLine(pal);
+}
